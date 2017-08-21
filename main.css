@@ -23,56 +23,76 @@ header, footer, section {
   clear: both;
 }
 
-#logo {
+/* Header
+ * --------------------------------------- */
+
+.logo {
   float: left;
-  margin: 17px 0 0 32px;
+  height: 100px;
+  width: 167px;
+  margin: 20px 15px 0 30px;
   padding: 0;
+  background-image: url(img/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#aux {
+/* Auxillary top menu
+ * --------------------------------------- */
+
+.aux {
   float: left;
-  margin: 60px 50px 0 15px;
+  margin: 20px 0 0 30px;
   padding: 0;
+  height: 100px;
 }
 
-#aux ul {
+.aux ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#aux ul li {
+.aux ul li {
   float: left;
   display: block;
-  margin: 0;
-  padding: 0px 20px 0px 20px;
+  margin: 43px 0;
+  padding: 0 20px 0 20px;
   border-right: 1px solid #cccecf;
 }
 
-#aux ul li:last-child
-{
-  border: none;
+.aux ul li:first-child {
+  padding-left: 0;
 }
 
-#aux ul li a,
-#aux ul li a:visited {
+.aux ul li:last-child {
+  border: none;
+  padding-right: 0;
+}
+
+.aux ul li a,
+.aux ul li a:visited {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 12px;
   color: black;
 }
 
-#aux ul li a:hover,
-#aux ul li a:active {
+.aux ul li a:hover,
+.aux ul li a:active {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 12px;
   color: #af2c2c;
 }
 
-#geninfo {
+/* Top contact info block
+ * --------------------------------------- */
+
+.geninfo {
   float: right;
-  margin: 25px 45px 20px 20px;
+  margin: 20px 45px 20px 30px;
   padding: 0;
   font-family: sans-serif;
   font-size: 12px;
@@ -101,25 +121,35 @@ header, footer, section {
   font-weight: 600;
 }
 
-#techgroups {
+/* Machinery assortment showcase
+ * --------------------------------------- */
+
+.techgroups__wrapper {
   clear: both;
+  text-align: center;
+}
+
+.techgroups {
   background-color: white;
   overflow: auto;
   margin-bottom: 13px;
   box-shadow: 0 3px 3px #d6dade;
 }
 
-#techgroups div {
+.techgroups div {
+  display: inline-block;
   float: left;
-  min-width: 110px;
+  min-width: 130px;
   width: 12.5%;
   height: 110px;
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-#techgroups div a {
+.techgroups div a {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -127,74 +157,81 @@ header, footer, section {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 12px;
-  color: black;
+  color: #000000;
 }
 
 .miniloader {
-  background: url("img/1.png") 10px 13px;
+  background: url("img/1.png");
 }
 
 .frontloader {
-  background: url("img/2.png") 10px 19px;
+  background: url("img/2.png");
 }
 
 .excloader {
-  background: url("img/3.png") 6px 16px;
+  background: url("img/3.png");
 }
 
 .excavator {
-  background: url("img/4.png") 10px 14px;
+  background: url("img/4.png");
 }
 
 .bulldozer {
-  background: url("img/5.png") 10px 16px;
+  background: url("img/5.png");
 }
 
 .autotrader {
-  background: url("img/6.png") 10px 14px;
+  background: url("img/6.png");
 }
 
 .autocrane {
-  background: url("img/7.png") 10px 2px;
+  background: url("img/7.png");
 }
 
 .forkloader {
-  background: url("img/8.png") 6px 14px;
+  background: url("img/8.png");
 }
 
-#mainmenu {
+/* Main menu
+ * --------------------------------------- */
+
+.mainmenu__wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.mainmenu {
+  display: inline-block;
   clear: both;
   box-shadow: 0 2px 2px #d6dade;
   border-radius: 2px;
   overflow: auto;
   padding: 1px;
-  width: 930px;
-  margin: auto;
   margin-bottom: 5px;
 }
 
-#mainmenu ul {
+.mainmenu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#mainmenu ul li {
+.mainmenu ul li {
   float: left;
   border-right: 1px solid #f5f5f5;
   border-left: 1px solid #c4c4c4;
 }
 
-#mainmenu ul li:first-child {
+.mainmenu ul li:first-child {
   border-left: none;
 }
 
-#mainmenu ul li:last-child {
+.mainmenu ul li:last-child {
   border-right: none;
 }
 
-#mainmenu ul li a,
-#mainmenu ul li a:visited{
+.mainmenu ul li a,
+.mainmenu ul li a:visited{
   display: block;
   overflow: hidden;
   border-radius: 2px;
@@ -211,8 +248,8 @@ header, footer, section {
   background-size: cover;
 }
 
-#mainmenu ul li a:hover,
-#mainmenu ul li a:active {
+.mainmenu ul li a:hover,
+.smainmenu ul li a:active {
   color: white;
   background-position: 0 -63px;
 }
@@ -237,18 +274,16 @@ header, footer, section {
   padding: 20px 0 0 97px;
 }
 
-/* Slideshow container */
+/* Slider
+ * --------------------------------------- */
+
 .slideshow-container {
-  max-width: 940px;
-  margin: auto;
   position: relative;
 }
 
 .mySlides {
-  width: 940px;
-  height: 190px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  height: 100%;
+  margin: 15px 0;
   display: none;
   border: 3px solid white;
   border-radius: 5px;
@@ -259,19 +294,24 @@ header, footer, section {
   background-repeat: no-repeat;
 }
 
+.mySlides:before {
+  display: block;
+  content: "";
+  padding-bottom: 25%;
+}
+
 .slide1 {
-  background-image: url("img/unclipped.png");
+  background-image: url("img/mccloskey.jpg");
 }
 
 .slide2 {
-  background-image: url("img/bsea.jpg");
+  background-image: url("img/dieci.jpg");
 }
 
 .slide3 {
-  background-image: url("img/80.jpeg");
+  background-image: url("img/avant.jpg");
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -286,18 +326,15 @@ header, footer, section {
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .slidercaption {
   color: white;
   background-color: rgba(20, 20, 20, 0.5);
@@ -307,7 +344,6 @@ header, footer, section {
   margin-left: 60px;
 }
 
-/* The dots/bullets/indicators */
 .slidernav {
   width: 100%;
   text-align: center;
@@ -348,46 +384,52 @@ header, footer, section {
   to {opacity: 1}
 }
 
-#latestnews {
+/* Side panel
+ * --------------------------------------- */
+
+.latestnews {
   float: left;
   width: 25%;
   padding: 0 20px 0 20px;
 }
 
-#latestnews ul {
+.latestnews ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#latestnews ul li {
+.latestnews ul li {
   margin-top: 25px;
   border-bottom: 1px dotted black;
 }
 
-#latestnews ul li:last-child {
+.latestnews ul li:last-child {
   border-bottom: none;
 }
 
-#latestnews ul li:first-child {
+.latestnews ul li:first-child {
   margin-top: 0px;
 }
 
-#latestnews a {
+.latestnews a {
   display: block;
 }
 
-#latestnews ul li h2,
-#latestnews ul li a {
+.latestnews ul li h2,
+.latestnews ul li a {
   color: #af2c2c;
   margin: 0;
   padding: 0 0 15px 0;
 }
 
-#latestnews ul li p {
+.latestnews ul li p {
   margin: 0;
   padding: 0 0 15px 0;
 }
+
+/* Content area
+ * --------------------------------------- */
 
 article {
   float: right;
@@ -395,25 +437,28 @@ article {
   padding: 0 50px 0 50px;
 }
 
-#partners {
+/* Partners showcase
+ * --------------------------------------- */
+
+.partners {
   clear: both;
 }
 
-#partners .wrap{
+.partners .wrap{
   margin-top: 15px;
   overflow: auto;
   box-shadow: 0 2px 2px #d6dade;
+  background-color: #f4f4f4;
 }
 
-#partners ul {
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    height: 77px;
-    list-style: none;
+.partners ul {
+  margin: 0;
+  padding: 0;
+  height: 77px;
+  list-style: none;
 }
 
-#partners li {
+.partners li {
   margin: 0;
   float: left;
   height: 77px;
@@ -421,47 +466,46 @@ article {
   width: 14.28%;
 }
 
-#partners a,
-#partners a:visited {
+.partners a,
+.partners a:visited {
   display: block;
   height: 77px;
   width: 130px;
 }
 
-#partners a:hover,
-#partners a:active {
+.partners a:hover,
+.partners a:active {
   background-position: 0 -75px;
 }
 
-a#mccloskey {
+a.mccloskey {
   background-image: url("img/mccloskey.png");
 }
 
-a#terex {
+a.terex {
   background-image: url("img/terex.png");
 }
 
-a#dieci {
+a.dieci {
   background-image: url("img/dieci.png");
 }
 
-a#hanix {
+a.hanix {
   background-image: url("img/hanix.png");
 }
 
-a#avant {
+a.avant {
   background-image: url("img/avant.png");
 }
 
-a#mustang {
+a.mustang {
   background-image: url("img/mustang.png");
 }
 
-a#hanix {
-  background-image: url("img/hanix.png");
-}
+/* Bottom menu categories
+ * --------------------------------------- */
 
-#bottom {
+.bottom {
   clear: both;
   overflow: auto;
   margin-bottom: 15px;
@@ -471,6 +515,7 @@ a#hanix {
 .box {
   float: left;
   min-width: 150px;
+  height: 150px;
   width: 16.5%;
   padding-left: 10px;
 }
@@ -497,23 +542,27 @@ a#hanix {
   color: #af2c2c;
 }
 
-#stripe {
-  margin-top: 10px;
-  margin-bottom: 25px;
+/* Footer
+ * --------------------------------------- */
+
+.stripe {
+  padding: 25px;
   overflow: auto;
   color: #8c8c8c;
 }
 
-#logogray {
+.logogray {
   clear: right;
 }
 
-#copy, #phones{
+.copy{
   float: left;
+  padding: 25px 25px 25px 0;
 }
 
-#phones {
-  margin: 0 60px 0 40px;
+.phones {
+  float: right;
+  padding: 25px 0;
 }
 
 .grayphone {
@@ -521,10 +570,84 @@ a#hanix {
   font-weight: 700;
 }
 
-#counter {
-  border: 1px solid black;
-  float: right;
-  width: 88px;
-  height: 31px;
-  margin-left: 18px;
+@media screen and (max-width: 1350px) {
+  .wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .latestnews {
+    display: none;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mainmenu {
+    width: 465px;
+  }
+
+  .mainmenu li:nth-child(3) {
+    border-left: none;
+    border-top: 2px solid #f5f5f5;
+  }
+
+  .mainmenu li:nth-child(2) {
+    border-right: none;
+  }
+
+  .mainmenu li:nth-child(4) {
+    border-top: 2px solid #f5f5f5;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .techgroups {
+    max-width: 520px;
+    display: inline-block;
+  }
+
+  .geninfo {
+    float: left;
+  }
+
+  .phones {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainmenu {
+    width: 232px;
+  }
+
+  .mainmenu li {
+    border: none;
+  }
+
+  .mainmenu li:nth-child(1),
+  .mainmenu li:nth-child(2),
+  .mainmenu li:nth-child(3),
+  .mainmenu li:nth-child(4) {
+    border: none;
+  }
+
+  .mainmenu li:nth-child(2),
+  .mainmenu li:nth-child(3),
+  .mainmenu li:nth-child(4) {
+    border: none;
+    border-top: 2px solid #f5f5f5;
+  }
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+  }
 }
