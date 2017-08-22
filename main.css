@@ -43,32 +43,30 @@ header, footer, section {
 
 .aux {
   float: left;
-  margin: 20px 0 0 30px;
+  margin: 20px 0 20px 30px;
   padding: 0;
-  height: 100px;
+  height: auto;
+  overflow: auto;
 }
 
 .aux ul {
+  display: block;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 33px 0;
+  overflow: auto;
 }
 
 .aux ul li {
   float: left;
   display: block;
-  margin: 43px 0;
-  padding: 0 20px 0 20px;
+  margin: 0;
+  padding: 10px 20px;
   border-right: 1px solid #cccecf;
-}
-
-.aux ul li:first-child {
-  padding-left: 0;
 }
 
 .aux ul li:last-child {
   border: none;
-  padding-right: 0;
 }
 
 .aux ul li a,
